@@ -4,14 +4,15 @@ An Aurelia wrapper component for [jsTree](https://www.jstree.com/).
 ## Install
 Make sure to npm install jQuery and jsTree alongside this wrapper.
 
-```
+```bash
 npm install jquery jstree aurelia-jstree --save
 ```
 
 ## Aurelia CLI Support
 If your Aurelia CLI build is based on RequireJS or SystemJS you can setup the plugin using the following dependency declaration:
 
-```
+```json
+...
 "dependencies": [
   {
     "name":"jquery",
@@ -35,7 +36,7 @@ If your Aurelia CLI build is based on RequireJS or SystemJS you can setup the pl
 ## Configuration
 In your `main.ts` you'll have to load jstree and register the plugin:
 
-```
+```typescript
 import {Aurelia} from 'aurelia-framework'
 import environment from './environment';
 import "jstree"; // <------------ MAKE SURE TO IMPORT JSTREE
