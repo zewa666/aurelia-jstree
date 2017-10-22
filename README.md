@@ -138,3 +138,7 @@ export class App {
   }
 }
 ```
+
+
+## Acknowledgement
+Thanks goes to Dwayne Charrington for his Aurelia-TypeScript starter package https://github.com/Vheissu/aurelia-typescript-plugin
