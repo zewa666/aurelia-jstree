@@ -68,7 +68,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vheissu/aurelia-typescript-plugin.git"
+    "url": "git+https://github.com/zewa666/aurelia-jstree.git"
   },
   "author": "Vildan Softic <zewa666@gmail.com>",
   "license": "MIT",
