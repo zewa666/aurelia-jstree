@@ -79,7 +79,7 @@
   "jspm": {
     "registry": "npm",
     "jspmPackage": true,
-    "main": "index",
+    "main": "aurelia-jstree",
     "format": "cjs",
     "directories": {
       "dist": "dist/commonjs"
