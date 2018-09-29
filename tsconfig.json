@@ -16,6 +16,7 @@
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "noEmitHelpers": false,
     "strict": true
   },
