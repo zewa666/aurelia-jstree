@@ -40,6 +40,7 @@ In your `main.ts` you'll have to load jstree and register the plugin:
 import {Aurelia} from 'aurelia-framework'
 import environment from './environment';
 import "jstree"; // <------------ MAKE SURE TO IMPORT JSTREE
+import 'jstree/themes/default/style.min.css';  // <----- IMPORT STYLES OR INCLUDE BY ANY OTHER MEANS (SCSS, direct include ...)
 
 export function configure(aurelia: Aurelia) {
   aurelia.use
@@ -139,6 +140,13 @@ export class App {
 }
 ```
 
+> When binding a function to either `selection-changed` or `node-moved` instead of a lambda expression, please note that `this` inside your function is going to refer to the element vs your expected class instance. To avoid that bind with a proper context
+```html
+<au-js-tree settings.bind="jstreeConfig"
+            data.bind="data"
+            selection-changed.bind="onSelectionChanged.bind($this)"
+            node-moved.bind="onNodeMoved.bind($this)"></au-js-tree>
+```
 
 ## Acknowledgement
 Thanks goes to Dwayne Charrington for his Aurelia-TypeScript starter package https://github.com/Vheissu/aurelia-typescript-plugin
